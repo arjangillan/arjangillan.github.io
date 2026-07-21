@@ -4,17 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Autocorrelogram Spike-Train Analysis Tool — Arjan Singh Gillan</title>
-<meta name="description" content="Interactive MATLAB tool for analyzing neuronal spike trains — ACG computation, automatic neuron classification, and multi-neuron firing statistics.">
+<meta name="description" content="Interactive MATLAB tool for analyzing neuronal spike trains: ACG computation, automatic neuron classification, and multi-neuron firing statistics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<style>
+  .gallery.equal{grid-template-columns:1fr 1fr}
+  .gallery.equal figure img{height:300px;object-fit:contain}
+  @media(max-width:640px){.gallery.equal figure img{height:auto}}
+  .proj-body figure.media-real.acg-raster-fig:not(.poster-fig):not(.wide){width:40%;max-width:400px;margin:8px 32px 14px 0}
+  @media(max-width:700px){.proj-body figure.media-real.acg-raster-fig:not(.poster-fig):not(.wide){width:auto;max-width:none;margin:20px 0 8px}}
+</style>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/favicon.png">
+<meta name="theme-color" content="#0d1117">
+<!-- Social preview (Open Graph/Twitter) — update the domain when you deploy -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arjan Singh Gillan">
+<meta property="og:title" content="Autocorrelogram Spike-Train Analysis Tool — Arjan Singh Gillan">
+<meta property="og:description" content="Interactive MATLAB tool for analyzing neuronal spike trains: ACG computation, automatic neuron classification, and multi-neuron firing statistics.">
+<meta property="og:image" content="https://arjangillan.com/assets/og-image.png">
+<meta property="og:url" content="https://arjangillan.com/projects/autocorrelogram.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Autocorrelogram Spike-Train Analysis Tool — Arjan Singh Gillan">
+<meta name="twitter:description" content="Interactive MATLAB tool for analyzing neuronal spike trains: ACG computation, automatic neuron classification, and multi-neuron firing statistics.">
+<meta name="twitter:image" content="https://arjangillan.com/assets/og-image.png">
 </head>
 <body>
 
 <div class="nav">
   <div class="wrap">
-    <a class="brand" href="../index.html"><img src="../assets/logo-white.png" alt="">A.GILLAN <span class="blip">//</span> PORTFOLIO</a>
+    <a class="brand" href="../index.html">ARJAN GILLAN <span class="blip">//</span> PORTFOLIO</a>
     <div class="links">
       <a href="../index.html#projects">PROJECTS</a>
       <a href="../index.html#about" class="hide-sm">ABOUT</a>
@@ -26,51 +47,46 @@
 <header class="proj-hero">
   <div class="wrap">
     <a class="crumb" href="../index.html#projects">← All projects</a>
-    <div class="code">REC-02 · SIGNAL ANALYSIS · NEURO · COMPLETE 2025</div>
+    <div class="code">REC-05 · SIGNAL ANALYSIS · NEURO</div>
     <h1>Autocorrelogram Spike-Train Analysis Tool</h1>
-    <div class="role">BME 60B Sandbox · <b>Team of 4</b> · MATLAB · Fall 2025</div>
+    <div class="role">Engineering Data Analysis Project · MATLAB</div>
   </div>
 </header>
 
 <main class="proj-body">
   <div class="wrap">
     <p class="lead reveal">
-      An interactive MATLAB tool for analyzing neuronal spike-train data, built on a public dataset of
-      129 neurons from the Buzsáki Lab databank. The autocorrelogram (ACG) is a core neuroscience tool —
-      a histogram of the time intervals between a neuron's own spikes — whose shape reveals firing
-      behavior and helps identify cell type. Our tool computes ACGs, automatically classifies neurons,
-      and compares firing statistics across multiple neurons.
+      An interactive MATLAB tool for analyzing neuronal spike-train data, developed on a public dataset
+      of 129 neurons from the Buzsáki Lab databank. The autocorrelogram (ACG), a histogram of the
+      intervals between a neuron's own spikes, is a core neuroscience metric whose shape characterizes
+      firing behavior and aids cell-type identification. The tool computes ACGs, automatically classifies
+      neurons, and compares firing statistics across multiple units.
     </p>
 
-    <div class="gallery reveal">
-      <figure class="cad">
-        <img src="../assets/acg-plot.jpg" alt="Autocorrelogram plot for a single neuron">
-        <figcaption>Generated ACG — single-neuron firing</figcaption>
-      </figure>
-      <figure class="cad">
-        <img src="../assets/acg-raster.jpg" alt="Raster plot of five neurons">
-        <figcaption>Raster plot — spike times, neurons 1–5</figcaption>
-      </figure>
-    </div>
-    <figure class="media-real reveal">
-      <img src="../assets/acg-stats.jpg" alt="Bar charts comparing firing rate, spike count, and regularity across neurons">
-      <figcaption>MULTI-NEURON COMPARISON — FIRING RATE, SPIKE COUNT, REGULARITY (CV)</figcaption>
+    <figure class="media-real wide reveal" style="max-width:640px;margin:16px 0 8px">
+      <img loading="lazy" src="../assets/acg-plot.jpg" alt="Autocorrelogram plot for a single neuron">
+      <figcaption>GENERATED ACG · SINGLE-NEURON FIRING</figcaption>
+    </figure>
+
+    <figure class="media-real wide reveal" style="max-width:640px;margin:16px 0 8px">
+      <img loading="lazy" src="../assets/acg-stats.jpg" alt="Bar charts comparing firing rate, spike count, and regularity across neurons">
+      <figcaption>MULTI-NEURON COMPARISON · FIRING RATE, SPIKE COUNT, REGULARITY (CV)</figcaption>
+    </figure>
+
+    <figure class="media-real reveal acg-raster-fig">
+      <img loading="lazy" src="../assets/acg-raster.jpg" alt="Raster plot of five neurons">
+      <figcaption>RASTER PLOT · SPIKE TIMES, NEURONS 1-5</figcaption>
     </figure>
 
     <div class="subhead reveal">What It Does</div>
     <ul class="plist reveal">
-      <li><b>Autocorrelogram + classification —</b> computes the ACG for a selected neuron and auto-classifies it by the shape near zero-lag — a central trough vs. peak vs. flat maps to regular/fast-spiking, bursting/oscillatory, or undetermined.</li>
-      <li><b>Multi-neuron comparison —</b> computes and plots mean firing rate, total spike count, and firing regularity (coefficient of variation of inter-spike intervals) across up to five neurons.</li>
-      <li><b>Interactive menu —</b> a validated menu-driven interface with raster-plot visualization of the first neurons in the dataset.</li>
+      <li><b>Autocorrelogram + classification:</b> computes the ACG for a selected neuron and auto-classifies it by the shape near zero-lag, where a central trough vs. peak vs. flat maps to regular/fast-spiking, bursting/oscillatory, or undetermined.</li>
+      <li><b>Multi-neuron comparison:</b> computes and plots mean firing rate, total spike count, and firing regularity (coefficient of variation of inter-spike intervals) across up to five neurons.</li>
+      <li><b>Interactive menu:</b> a validated menu-driven interface with raster-plot visualization of the first neurons in the dataset.</li>
     </ul>
 
-    <p class="lead reveal" style="margin-top:22px">
-      The project grew out of the team's research backgrounds — I work in a neural-circuit-mapping lab
-      (UCI Xu Lab), where tools like the ACG are used to characterize neuronal firing.
-    </p>
-
     <div class="pager">
-      <a class="prev" href="rover.html"><span class="lbl">← PREV</span>Mars Rover</a>
+      <a class="prev" href="rehab-research.html"><span class="lbl">← PREV</span>Transcutaneous Spinal Cord Stimulation (tSCS) Study</a>
       <a class="next" href="morse.html"><span class="lbl">NEXT →</span>Morse Code Learning Device</a>
 
     </div>
@@ -80,12 +96,14 @@
 <footer style="border-top:1px solid var(--line)">
   <div class="wrap">
     <div>
-      <div class="eyebrow" style="margin-bottom:16px">Let's build something</div>
-      <div class="big">Open to R&amp;D &amp; clinical/applications roles.<br><a href="mailto:Gillana@uci.edu">Gillana@uci.edu →</a></div>
+      <div class="big">Get in Touch</div>
+      <div class="hero-links">
+        <a class="btn primary" href="https://www.linkedin.com/in/arjan-gillan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="../assets/Arjan_Singh_Gillan_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↗</a>
+      </div>
     </div>
     <div class="contact">
-      <div><a href="mailto:Gillana@uci.edu">Gillana@uci.edu</a></div>
-      <div><a href="https://www.linkedin.com/in/arjan-gillan/" target="_blank" rel="noopener">linkedin.com/in/arjan-gillan ↗</a></div>
+      <div><a href="mailto:Arjangillan@gmail.com">Arjangillan@gmail.com</a></div>
       <div>Irvine, California</div>
     </div>
   </div>

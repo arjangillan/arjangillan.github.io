@@ -3,18 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Degu Brain Atlas — Xu Lab Research — Arjan Singh Gillan</title>
+<title>3D MRI Degu Brain Atlas — Arjan Singh Gillan</title>
 <meta name="description" content="First-author NIH-funded research constructing a high-resolution 3D MRI brain atlas of Octodon degus, plus hardware design for the Xu Lab.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/favicon.png">
+<meta name="theme-color" content="#0d1117">
+<!-- Social preview (Open Graph/Twitter) — update the domain when you deploy -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arjan Singh Gillan">
+<meta property="og:title" content="3D MRI Degu Brain Atlas — Arjan Singh Gillan">
+<meta property="og:description" content="First-author NIH-funded research constructing a high-resolution 3D MRI brain atlas of Octodon degus, plus hardware design for the Xu Lab.">
+<meta property="og:image" content="https://arjangillan.com/assets/og-image.png">
+<meta property="og:url" content="https://arjangillan.com/projects/degu-research.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3D MRI Degu Brain Atlas — Arjan Singh Gillan">
+<meta name="twitter:description" content="First-author NIH-funded research constructing a high-resolution 3D MRI brain atlas of Octodon degus, plus hardware design for the Xu Lab.">
+<meta name="twitter:image" content="https://arjangillan.com/assets/og-image.png">
 </head>
 <body>
 
 <div class="nav">
   <div class="wrap">
-    <a class="brand" href="../index.html"><img src="../assets/logo-white.png" alt="">A.GILLAN <span class="blip">//</span> PORTFOLIO</a>
+    <a class="brand" href="../index.html">ARJAN GILLAN <span class="blip">//</span> PORTFOLIO</a>
     <div class="links">
       <a href="../index.html#projects">PROJECTS</a>
       <a href="../index.html#about" class="hide-sm">ABOUT</a>
@@ -26,9 +40,9 @@
 <header class="proj-hero">
   <div class="wrap">
     <a class="crumb" href="../index.html#projects">← All projects</a>
-    <div class="code">REC-05 · RESEARCH · NEURO-IMAGING · 2025 – PRESENT</div>
-    <h1>Degu Brain Atlas &amp; Xu Lab Research</h1>
-    <div class="role">UCI Center for Neural Circuit Mapping (Xu Lab) · <b>Student Researcher</b> · Jan 2025 – Present</div>
+    <div class="code">REC-02 · RESEARCH · NEURO-IMAGING</div>
+    <h1>3D MRI Degu Brain Atlas</h1>
+    <div class="role">UCI Center for Neural Circuit Mapping (Xu Lab) · <b>Student Researcher</b></div>
   </div>
 </header>
 
@@ -37,23 +51,30 @@
     <p class="lead reveal">
       In the <b>Xu Lab</b> (Center for Neural Circuit Mapping) I'm first author on an NIH-funded degu
       brain-atlas project, and I've designed hardware for the lab's animal colony. The work spans
-      neuroimaging analysis and hands-on mechanical design — turning raw MRI data, or a raw engineering
+      neuroimaging analysis and hands-on mechanical design, turning raw MRI data, or a raw engineering
       need, into something rigorous and usable.
     </p>
+
+    <figure class="media-real wide poster-fig reveal">
+      <a href="../assets/atlas-poster.pdf" target="_blank" rel="noopener">
+        <img loading="lazy" src="../assets/atlas-poster.jpg" alt="Research poster: Constructing a High-Resolution 3D MRI-Based Brain Atlas of Octodon degus">
+      </a>
+      <figcaption>RESEARCH POSTER · GILLAN ET AL. · FIRST AUTHOR · DEGU BRAIN ATLAS · CLICK TO OPEN FULL PDF</figcaption>
+    </figure>
 
     <div class="focus reveal">
       <div class="fhead">Degu Brain Atlas <span class="tagme">First author</span></div>
       <div class="fbody">
         <p>
           I'm <b>first author</b> on an NIH-funded project constructing a high-resolution 3D MRI-based
-          brain atlas of <i>Octodon degus</i> — a long-lived rodent that naturally develops
+          brain atlas of <i>Octodon degus</i>, a long-lived rodent that naturally develops
           Alzheimer's-like pathology, making it a valuable model for aging and neurodegeneration
           research. Existing degu atlases are low-resolution and poorly labeled; ours aims to fix that.
         </p>
         <ul>
-          <li><b>MRI skull-stripping &amp; segmentation —</b> processed 9.4T MRI scans (50 µm isotropic) in <b>ITK-SNAP</b>, using active-contour 3D segmentation and bandpass thresholding to isolate the brain (red) and hippocampus (green).</li>
-          <li><b>Atlas registration —</b> registered degu brains onto the established Waxholm rat atlas to parcellate and label <b>222 brain regions</b>, generating a high-resolution annotated atlas.</li>
-          <li><b>Volumetric analysis —</b> quantified regional brain volumes, finding aged degus show broad shrinkage (152 of 222 regions with &gt;5% volume loss) plus an expansion of trabecular skull bone via µCT.</li>
+          <li><b>MRI skull-stripping &amp; segmentation:</b> processed 9.4T MRI scans (50 µm isotropic) in <b>ITK-SNAP</b>, using active-contour 3D segmentation and bandpass thresholding to isolate the brain (red) and hippocampus (green).</li>
+          <li><b>Atlas registration:</b> registered degu brains onto the established Waxholm rat atlas to parcellate and label <b>222 brain regions</b>, generating a high-resolution annotated atlas.</li>
+          <li><b>Volumetric analysis:</b> quantified regional brain volumes, finding aged degus show broad shrinkage (152 of 222 regions with &gt;5% volume loss) plus an expansion of trabecular skull bone via µCT.</li>
         </ul>
         <p class="fnote">Presented as a research poster (Gillan et al.), first author among a multi-institution team. Supported by NIH grants F31AG082485 and R24AG073198.</p>
       </div>
@@ -61,44 +82,53 @@
 
     <div class="gallery reveal">
       <figure>
-        <img src="../assets/degu-brain-side.jpg" alt="3D segmented render of the degu brain (red) with hippocampus (green), side view">
-        <figcaption>3D segmentation — brain (red), hippocampus (green)</figcaption>
+        <img loading="lazy" src="../assets/degu-brain-side.jpg" alt="3D segmented render of the degu brain (red) with hippocampus (green), side view">
+        <figcaption>3D segmentation · brain (red), hippocampus (green)</figcaption>
       </figure>
       <figure>
-        <img src="../assets/degu-brain-front.jpg" alt="3D segmented render of the degu brain, front view">
-        <figcaption>Segmentation — coronal / front view</figcaption>
+        <img loading="lazy" src="../assets/degu-brain-front.jpg" alt="3D segmented render of the degu brain, front view">
+        <figcaption>Segmentation · coronal / front view</figcaption>
       </figure>
     </div>
 
-    <figure class="media-real reveal">
-      <img src="../assets/atlas-poster.jpg" alt="Research poster: Constructing a High-Resolution 3D MRI-Based Brain Atlas of Octodon degus">
-      <figcaption>RESEARCH POSTER — GILLAN ET AL. · FIRST AUTHOR · DEGU BRAIN ATLAS</figcaption>
-    </figure>
+    <div class="subhead reveal">Segmentation Walkthrough</div>
+    <div class="local-video reveal">
+      <video controls preload="metadata" poster="../assets/degu-segmentation-still.jpg">
+        <source src="../assets/degu-segmentation.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-cap">▶ Live ITK-SNAP segmentation of a 9.4T degu MRI scan · brain (red) and hippocampus (green)</div>
 
     <div class="focus reveal">
       <div class="fhead">Burrowing Tube Build <span class="tagme">Design &amp; fabrication</span></div>
       <div class="fbody">
         <p>
           A hands-on hardware task for the lab's degu colony: I <b>designed and built aluminum burrowing
-          tubes</b> end to end — from CAD to a fabricated, assembled part with a documented build plan.
+          tubes</b> end to end, from CAD to a fabricated, assembled part with a documented build plan.
         </p>
         <ul>
-          <li><b>CAD design —</b> modeled the tube and mounting feet in <b>SolidWorks</b>, sizing an aluminum tube (105 mm OD, 3 mm wall) on angled machined feet.</li>
-          <li><b>Fabrication —</b> sourced stock and ordered machined feet through SendCutSend; deburred, marked, and drilled M3 clearance holes to assemble the tube to its feet.</li>
-          <li><b>Documentation —</b> wrote a step-by-step build plan with dimensions, tolerances, and a bill of materials so the build is reproducible by the lab.</li>
+          <li><b>CAD design:</b> modeled the tube and mounting feet in <b>SolidWorks</b>, sizing an aluminum tube (105 mm OD, 3 mm wall) on angled machined feet.</li>
+          <li><b>Fabrication:</b> sourced stock and ordered machined feet through SendCutSend; deburred, marked, and drilled M3 clearance holes to assemble the tube to its feet.</li>
+          <li><b>Documentation:</b> wrote a step-by-step build plan with dimensions, tolerances, and a bill of materials so the build is reproducible by the lab.</li>
         </ul>
       </div>
     </div>
 
     <div class="gallery reveal">
       <figure>
-        <img src="../assets/tube-photo.jpg" alt="Two finished aluminum burrowing tubes mounted on machined feet">
-        <figcaption>Finished build — machined aluminum tubes</figcaption>
+        <img loading="lazy" src="../assets/tube-photo.jpg" alt="Two finished aluminum burrowing tubes mounted on machined feet">
+        <figcaption>Finished build · machined aluminum tubes</figcaption>
       </figure>
-      <figure class="cad">
-        <img src="../assets/tube-cad.jpg" alt="SolidWorks CAD render of the burrowing tube on machined feet">
-        <figcaption>Burrowing tube — SolidWorks CAD</figcaption>
-      </figure>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <figure class="cad">
+          <img loading="lazy" src="../assets/tube-cad.jpg" alt="SolidWorks CAD render of the burrowing tube on machined feet">
+          <figcaption>Burrowing tube · SolidWorks CAD</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="../assets/degu-fixture.jpg" alt="Custom machined aluminum fixture with a bored hole to hold a food tube for degu handedness testing">
+          <figcaption>Custom machined fixture · holds a food tube for degu handedness testing</figcaption>
+        </figure>
+      </div>
     </div>
 
     <p class="lead reveal" style="margin-top:26px;font-size:15px;color:var(--ink-faint);border-left:2px solid var(--line-bright);padding-left:16px;max-width:74ch">
@@ -107,8 +137,8 @@
     </p>
 
     <div class="pager">
-      <a class="prev" href="macgyver.html"><span class="lbl">← PREV</span>Bridgeless Glasses</a>
-      <a class="next" href="rehab-research.html"><span class="lbl">NEXT →</span>Gait Rehabilitation Research</a>
+      <a class="prev" href="rover.html"><span class="lbl">← PREV</span>Legacy Robotics Mars Rover</a>
+      <a class="next" href="macgyver.html"><span class="lbl">NEXT →</span>Bridgeless Glasses</a>
 
     </div>
   </div>
@@ -117,12 +147,14 @@
 <footer style="border-top:1px solid var(--line)">
   <div class="wrap">
     <div>
-      <div class="eyebrow" style="margin-bottom:16px">Let's build something</div>
-      <div class="big">Open to R&amp;D &amp; clinical/applications roles.<br><a href="mailto:Gillana@uci.edu">Gillana@uci.edu →</a></div>
+      <div class="big">Get in Touch</div>
+      <div class="hero-links">
+        <a class="btn primary" href="https://www.linkedin.com/in/arjan-gillan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="../assets/Arjan_Singh_Gillan_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↗</a>
+      </div>
     </div>
     <div class="contact">
-      <div><a href="mailto:Gillana@uci.edu">Gillana@uci.edu</a></div>
-      <div><a href="https://www.linkedin.com/in/arjan-gillan/" target="_blank" rel="noopener">linkedin.com/in/arjan-gillan ↗</a></div>
+      <div><a href="mailto:Arjangillan@gmail.com">Arjangillan@gmail.com</a></div>
       <div>Irvine, California</div>
     </div>
   </div>

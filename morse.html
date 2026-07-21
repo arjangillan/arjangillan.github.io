@@ -9,12 +9,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/favicon.png">
+<meta name="theme-color" content="#0d1117">
+<!-- Social preview (Open Graph/Twitter) — update the domain when you deploy -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arjan Singh Gillan">
+<meta property="og:title" content="Morse Code Learning Device — Arjan Singh Gillan">
+<meta property="og:description" content="Arduino/C++ device that teaches and translates Morse code both ways; owned the button-timing and input-sensitivity logic.">
+<meta property="og:image" content="https://arjangillan.com/assets/og-image.png">
+<meta property="og:url" content="https://arjangillan.com/projects/morse.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Morse Code Learning Device — Arjan Singh Gillan">
+<meta name="twitter:description" content="Arduino/C++ device that teaches and translates Morse code both ways; owned the button-timing and input-sensitivity logic.">
+<meta name="twitter:image" content="https://arjangillan.com/assets/og-image.png">
 </head>
 <body>
 
 <div class="nav">
   <div class="wrap">
-    <a class="brand" href="../index.html"><img src="../assets/logo-white.png" alt="">A.GILLAN <span class="blip">//</span> PORTFOLIO</a>
+    <a class="brand" href="../index.html">ARJAN GILLAN <span class="blip">//</span> PORTFOLIO</a>
     <div class="links">
       <a href="../index.html#projects">PROJECTS</a>
       <a href="../index.html#about" class="hide-sm">ABOUT</a>
@@ -26,37 +40,30 @@
 <header class="proj-hero">
   <div class="wrap">
     <a class="crumb" href="../index.html#projects">← All projects</a>
-    <div class="code">REC-03 · EMBEDDED SYSTEMS · COMPLETE 2025</div>
+    <div class="code">REC-06 · EMBEDDED SYSTEMS</div>
     <h1>Morse Code Learning Device</h1>
-    <div class="role">BME 60A Capstone · <b>Team of 4</b> · Arduino / C++ · Fall 2025</div>
+    <div class="role">Engineering Data Acquisition Project · Arduino / C++</div>
   </div>
 </header>
 
 <main class="proj-body">
   <div class="wrap">
     <p class="lead reveal">
-      An interactive Arduino device that teaches Morse code and translates in both directions —
+      An interactive Arduino device that teaches Morse code and translates in both directions:
       press the button in real time and it decodes dots and dashes into text on the serial monitor;
       type a message and it plays it back as Morse on a buzzer with synchronized LED feedback. We
       framed it as an accessibility tool, inspired by research on Morse-based communication for people
       with cerebral palsy and speech or motor impairments.
     </p>
 
-    <div class="local-video reveal">
-      <video controls preload="metadata" poster="../assets/morse-still.jpg">
-        <source src="../assets/morse-demo.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="video-cap">▶ Device demo — live encode/decode and two-player messaging</div>
-
-    <div class="gallery reveal">
+    <div class="gallery equal reveal">
       <figure>
-        <img src="../assets/morse-prototype.jpg" alt="Physical Arduino prototype on a breadboard">
-        <figcaption>Physical prototype — Arduino UNO build</figcaption>
+        <img loading="lazy" src="../assets/morse-prototype.jpg" alt="Physical Arduino prototype on a breadboard">
+        <figcaption>Physical prototype · Arduino UNO build</figcaption>
       </figure>
       <figure class="cad">
-        <img src="../assets/morse-wiring.jpg" alt="Wiring diagram of the breadboard">
-        <figcaption>Wiring diagram — buzzer, buttons, RGB LED</figcaption>
+        <img loading="lazy" src="../assets/morse-wiring.jpg" alt="Wiring diagram of the breadboard">
+        <figcaption>Wiring diagram · buzzer, buttons, RGB LED</figcaption>
       </figure>
     </div>
 
@@ -64,28 +71,36 @@
       <div class="fhead">My Contribution <span class="tagme">Timing &amp; input</span></div>
       <div class="fbody">
         <p>
-          I owned the <b>button-press timing and input sensitivity</b> — the logic that turns how long a
+          I owned the <b>button-press timing and input sensitivity</b>: the logic that turns how long a
           button is held into a dot or a dash, and a potentiometer that lets the user tune the press
           thresholds to their own motor ability (important for the accessibility use case).
         </p>
         <ul>
-          <li><b>Timing logic —</b> used <code>millis()</code> to measure press duration and classify dot vs. dash against tunable dot/dash thresholds, with debouncing to prevent spurious inputs.</li>
-          <li><b>Adjustable sensitivity —</b> a potentiometer sets the timing window so users with different motor control can calibrate the device to themselves.</li>
-          <li><b>Two-player mode —</b> extended the input handling so two people can exchange messages, each with their own button.</li>
+          <li><b>Timing logic:</b> used <code>millis()</code> to measure press duration and classify dot vs. dash against tunable dot/dash thresholds, with debouncing to prevent spurious inputs.</li>
+          <li><b>Adjustable sensitivity:</b> a potentiometer sets the timing window so users with different motor control can calibrate the device to themselves.</li>
+          <li><b>Two-player mode:</b> extended the input handling so two people can exchange messages, each with their own button.</li>
         </ul>
       </div>
     </div>
 
     <div class="subhead reveal">Stages Built</div>
     <ul class="plist reveal">
-      <li><b>Read —</b> button presses decode into dots/dashes on the serial monitor with buzzer and red-LED feedback.</li>
-      <li><b>Transcribe —</b> a 48-entry Morse lookup (letters, numbers, punctuation) converts patterns into characters.</li>
-      <li><b>Communicate —</b> two-player messaging, plus a serial-to-Morse mode that plays a typed message back audibly.</li>
+      <li><b>Read:</b> button presses decode into dots/dashes on the serial monitor with buzzer and red-LED feedback.</li>
+      <li><b>Transcribe:</b> a 48-entry Morse lookup (letters, numbers, punctuation) converts patterns into characters.</li>
+      <li><b>Communicate:</b> two-player messaging, plus a serial-to-Morse mode that plays a typed message back audibly.</li>
     </ul>
+
+    <div class="subhead reveal">Device Demo</div>
+    <div class="local-video reveal">
+      <video controls preload="metadata" poster="../assets/morse-still.jpg">
+        <source src="../assets/morse-demo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-cap">▶ Device demo · live encode/decode and two-player messaging</div>
 
     <div class="pager">
       <a class="prev" href="autocorrelogram.html"><span class="lbl">← PREV</span>Autocorrelogram Tool</a>
-      <a class="next" href="macgyver.html"><span class="lbl">NEXT →</span>Bridgeless Glasses</a>
+      <span></span>
 
     </div>
   </div>
@@ -94,12 +109,14 @@
 <footer style="border-top:1px solid var(--line)">
   <div class="wrap">
     <div>
-      <div class="eyebrow" style="margin-bottom:16px">Let's build something</div>
-      <div class="big">Open to R&amp;D &amp; clinical/applications roles.<br><a href="mailto:Gillana@uci.edu">Gillana@uci.edu →</a></div>
+      <div class="big">Get in Touch</div>
+      <div class="hero-links">
+        <a class="btn primary" href="https://www.linkedin.com/in/arjan-gillan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="../assets/Arjan_Singh_Gillan_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↗</a>
+      </div>
     </div>
     <div class="contact">
-      <div><a href="mailto:Gillana@uci.edu">Gillana@uci.edu</a></div>
-      <div><a href="https://www.linkedin.com/in/arjan-gillan/" target="_blank" rel="noopener">linkedin.com/in/arjan-gillan ↗</a></div>
+      <div><a href="mailto:Arjangillan@gmail.com">Arjangillan@gmail.com</a></div>
       <div>Irvine, California</div>
     </div>
   </div>
