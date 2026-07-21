@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridgeless Eyeglasses — Arjan Singh Gillan</title>
+<meta name="description" content="A bridgeless eyewear system that removes reliance on the nasal bridge; full CAD, materials selection, SolidWorks FEA, and a working 3D-printed prototype.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .gallery.equal{grid-template-columns:1fr 1fr}
+  .gallery.equal figure img{height:300px;object-fit:cover}
+  .gallery.equal .cad img{object-fit:contain}
+  @media(max-width:640px){.gallery.equal figure img{height:auto}}
+</style>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="apple-touch-icon" href="../assets/favicon.png">
+<meta name="theme-color" content="#0d1117">
+<!-- Social preview (Open Graph/Twitter) — update the domain when you deploy -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Arjan Singh Gillan">
+<meta property="og:title" content="Bridgeless Eyeglasses — Arjan Singh Gillan">
+<meta property="og:description" content="A bridgeless eyewear system that removes reliance on the nasal bridge; full CAD, materials selection, SolidWorks FEA, and a working 3D-printed prototype.">
+<meta property="og:image" content="https://arjangillan.github.io/assets/og-image.png">
+<meta property="og:url" content="https://arjangillan.github.io/projects/macgyver.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bridgeless Eyeglasses — Arjan Singh Gillan">
+<meta name="twitter:description" content="A bridgeless eyewear system that removes reliance on the nasal bridge; full CAD, materials selection, SolidWorks FEA, and a working 3D-printed prototype.">
+<meta name="twitter:image" content="https://arjangillan.github.io/assets/og-image.png">
+</head>
+<body>
+
+<div class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">ARJAN GILLAN <span class="blip">//</span> PORTFOLIO</a>
+    <div class="links">
+      <a href="../index.html#projects">PROJECTS</a>
+      <a href="../index.html#about" class="hide-sm">ABOUT</a>
+      <a href="../index.html#contact">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<header class="proj-hero">
+  <div class="wrap">
+    <a class="crumb" href="../index.html#projects">← All projects</a>
+    <div class="code">REC-03 · MECHANICAL DESIGN · CAD + FEA</div>
+    <h1>Bridgeless Eyeglasses</h1>
+    <div class="role">Engineering CAD Project · SolidWorks</div>
+  </div>
+</header>
+
+<main class="proj-body">
+  <div class="wrap">
+    <p class="lead reveal">
+      Traditional eyeglasses rely on the nasal bridge for support, a problem for people recovering from
+      nasal surgery, with saddle-nose or congenital nasal conditions, or whose facial structure makes
+      glasses uncomfortable. Our team designed a pair of <b>bridgeless eyeglasses</b> that removes the nose
+      from the load path entirely, redistributing the frame's weight to the sides and back of the head
+      through extended, adjustable temple arms. We took it from problem definition through materials
+      selection, CAD, FEA validation, and a working 3D-printed prototype.
+    </p>
+
+    <figure class="media-real reveal">
+      <img loading="lazy" src="../assets/mac-prototype.jpg" alt="Finished 3D-printed bridgeless glasses prototype with clear lenses">
+      <figcaption>FINISHED PROTOTYPE · 3D-PRINTED BRIDGELESS FRAME, ADJUSTABLE TEMPLES</figcaption>
+    </figure>
+
+    <div class="subhead reveal">How It Works</div>
+    <ul class="plist reveal">
+      <li><b>Bridgeless frame:</b> support comes from the temples and behind the ears instead of the nose, wrapping toward the occipital region.</li>
+      <li><b>Adjustable fit:</b> a spring-loaded interior holder slides within the shell holder, with a ball-detent mechanism so the user can size the arms to their own head circumference.</li>
+      <li><b>Validated:</b> FEA confirmed stresses stay well within the material's yield strength under the frame's own weight; motion studies confirmed the hinges and extension mechanism clear and function.</li>
+    </ul>
+
+    <div class="chips reveal">
+      <div class="m"><span>·</span> No nasal bridge</div>
+      <div class="m"><span>·</span> Adjustable temple arms</div>
+      <div class="m"><span>·</span> Ball-detent sizing</div>
+      <div class="m"><span>·</span> Spring-loaded slide</div>
+    </div>
+
+    <div class="focus reveal">
+      <div class="fhead">The Work <span class="tagme">Team of 4</span></div>
+      <div class="fbody">
+        <p>
+          Our team worked through each stage together, from
+          problem definition and materials selection to CAD, simulation, and building the prototype. The
+          engineering skills we used:
+        </p>
+        <ul>
+          <li><b>CAD modeling:</b> the parts and assembly in SolidWorks (shell holder, interior sliding holder, hinges, and lens frame) with full dimensioned engineering drawings.</li>
+          <li><b>FEA (static):</b> fixtures and loads set up to model the real case (roller/slider at the temples, gravity on a 58.9 g / 0.58 N frame), running static stress, strain, and displacement studies with soft-spring and inertial-relief settings to stabilize the assembly-level analysis.</li>
+          <li><b>Motion studies:</b> hinge-fold and arm-extension studies to verify mechanical clearance and the adjustable-length mechanism.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gallery equal reveal">
+      <figure class="cad">
+        <img loading="lazy" src="../assets/mac-stress.jpg" alt="SolidWorks von Mises stress plot of the glasses frame">
+        <figcaption>FEA · von Mises stress under 0.58 N load</figcaption>
+      </figure>
+      <figure class="cad">
+        <img loading="lazy" src="../assets/mac-displacement.jpg" alt="SolidWorks displacement plot of the glasses frame">
+        <figcaption>FEA · resultant displacement (URES)</figcaption>
+      </figure>
+    </div>
+
+    <div class="subhead reveal">Materials Selection</div>
+    <ul class="plist reveal">
+      <li><b>Ashby-chart screening:</b> used Ansys Granta EduPack and the "beam in bending" performance index (M = E<sup>1/2</sup>/ρ) to screen for stiff-yet-lightweight materials, narrowing from all materials down to the polymers class.</li>
+      <li><b>Prototype vs. production:</b> prototyped in <b>PLA</b> (cheap, stiff, easy to 3D-print on campus), then used a level-3 Granta database with a durability limit to select <b>PA12 (Nylon 12)</b> for a production frame, flexible enough to conform to the head, with the elongation to flex without snapping and common use in medical/optical applications.</li>
+    </ul>
+
+    <div class="gallery equal reveal">
+      <figure class="cad">
+        <img loading="lazy" src="../assets/mac-cad-iso.jpg" alt="SolidWorks isometric render of the full bridgeless glasses assembly">
+        <figcaption>SolidWorks assembly · full bridgeless frame</figcaption>
+      </figure>
+      <figure>
+        <img loading="lazy" src="../assets/mac-prototype.jpg" alt="Assembled bridgeless glasses prototype">
+        <figcaption>The build · 3D-printed and assembled</figcaption>
+      </figure>
+    </div>
+
+    <figure class="media-real wide poster-fig reveal">
+      <a href="../assets/mac-drawing.pdf" target="_blank" rel="noopener">
+        <img loading="lazy" src="../assets/mac-drawing.png" alt="SolidWorks engineering drawing of the bridgeless glasses assembly — exploded view and bill of materials">
+      </a>
+      <figcaption>ENGINEERING DRAWING · EXPLODED ASSEMBLY + BILL OF MATERIALS (SOLIDWORKS) · CLICK TO OPEN FULL PDF</figcaption>
+    </figure>
+
+    <div class="pager">
+      <a class="prev" href="degu-research.html"><span class="lbl">← PREV</span>3D MRI Degu Brain Atlas</a>
+      <a class="next" href="rehab-research.html"><span class="lbl">NEXT →</span>Transcutaneous Spinal Cord Stimulation (tSCS) Study</a>
+
+    </div>
+  </div>
+</main>
+
+<footer style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div>
+      <div class="big">Get in Touch</div>
+      <div class="hero-links">
+        <a class="btn primary" href="https://www.linkedin.com/in/arjan-gillan/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="../assets/Arjan_Singh_Gillan_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↗</a>
+      </div>
+    </div>
+    <div class="contact">
+      <div><a href="mailto:Arjangillan@gmail.com">Arjangillan@gmail.com</a></div>
+      <div>Irvine, California</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
